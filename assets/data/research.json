@@ -1,0 +1,48 @@
+
+[
+    {
+        "type": "Research Paper",
+        "date": "Aug 2024",
+        "title": "Enhancing Network Security: A Hybrid Approach for Detection and Mitigation of Distributed Denial-of-Service Attacks Using Machine Learning",
+        "doi": "10.1007/978-3-031-64064-3_7",
+        "description": "Hybrid approach for Detection and Mitigation of Distributed Denial-of-Service Attacks Using Machine Learning",
+        "image": "/assets/images/springer.png",
+        "link": "https://doi.org/10.1007/978-3-031-64064-3_7"
+    },
+    {
+        "type": "Conference Paper",
+        "date": "Nov 2024",
+        "title": "Hybrid Machine Learning Model for Detecting Bangla Smishing Text Using BERT and Character-Level CNN",
+        "preprint": "10.48550/arXiv.2502.01518",
+        "description": "Detecting Bangla Smishing Text Using BERT and Character-Level CNN",
+        "image": "/assets/images/ieee.jpeg",
+        "link": "https://arxiv.org/abs/2502.01518"
+    },
+    {
+        "type": "Conference Paper",
+        "date": "Feb 2025",
+        "title": "Quantum-Inspired Privacy-Preserving Federated Learning Framework for Secure Dementia Classification",
+        "preprint": "10.48550/arXiv.2503.03267",
+        "description": "Quantum-Inspired Privacy-Preserving Federated Learning Framework for Secure Dementia Classification",
+        "image": "/assets/images/ieee.jpeg",
+        "link": "https://arxiv.org/abs/2503.03267"
+    },
+    {
+        "type": "Conference Paper",
+        "date": "Feb 2025",
+        "title": "PhishVQC: Optimizing Phishing URL Detection with Correlation Based Feature Selection and Variational Quantum Classifier",
+        "preprint": "10.48550/arXiv.2503.01799",
+        "description": "Optimizing Phishing URL Detection with Correlation Based Feature Selection and Variational Quantum Classifier",
+        "image": "/assets/images/ieee.jpeg",
+        "link": "https://arxiv.org/abs/2503.01799"
+    },
+    {
+        "type": "Dataset",
+        "date": "Aug 2024",
+        "title": "Bangla SMS Smishing Dataset",
+        "samples": "2,287 annotated messages",
+        "description": "Comprehensive collection of smishing attempts with NLP-ready formatting",
+        "image": "/assets/images/ieee.png",
+        "link": "https://dx.doi.org/10.21227/vxz9-ak04"
+    }
+]

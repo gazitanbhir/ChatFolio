@@ -1,0 +1,173 @@
+{
+  "name": "Gazi Tanbhir",
+  "contact": {
+    "location": "Dhaka, Bangladesh",
+    "email": "gazitanbhir@gmail.com",
+    "phone": "01714-734216",
+    "github": "gazitanbhir.github.io",
+    "linkedin": "linkedin.com/in/gazitanbhir",
+    "github_profile": "github.com/gazitanbhir"
+  },
+  "summary": "Computer Science graduate skilled in machine learning, Python, Django, and TensorFlow. Experienced in competitive programming (ICPC) and academic research with a strong technical foundation.",
+  "education": [
+    {
+      "institution": "World University of Bangladesh",
+      "degree": "B. Sc. in Computer Science and Engineering",
+      "dates": "Sept 2019 - Aug 2023",
+      "result cgpa": "3.85/4.0",
+      "coursework": [
+        "Data Structures & Algorithms",
+        "Database Management & Operating Systems",
+        "Web Development & Programming",
+        "Machine Learning & Artificial Intelligence",
+        "Software Engineering",
+        "Cybersecurity"
+      ]
+    }
+  ],
+  "work experience": [
+    {
+      "title": "Web Developer & Business Planner",
+      "company": "Bholamritshilpa.com – Remote",
+      "dates": "2021-2024",
+      "responsibilities": [
+        "Led the design and development of high-performance websites, improving functionality, responsiveness, and user experience.",
+        "Implemented strategic business planning to align web solutions with company objectives, increasing online engagement and sales.",
+        "Enhanced website performance and SEO, driving a significant boost in traffic and customer conversion rates."
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "CourseCab.com – Hybrid",
+      "dates": "2020-2022",
+      "responsibilities": [
+        "Designed and optimized WordPress websites, improving load speeds and user experience.",
+        "Implemented custom themes and plugins to enhance website functionality, resulting in increased user engagement.",
+        "Collaborated with content creators to develop SEO-friendly site structures, boosting search engine rankings."
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Hybrid Machine Learning Model for Detecting Bangla Smishing Text Using BERT and Character-Level CNN",
+      "conference": "13th International Conference on Electrical and Computer Engineering (ICECE)",
+      "date": "Nov 2024",
+      "preprint": "10.48550/arXiv.2502.01518"
+    },
+    {
+      "title": "Quantum-Inspired Privacy-Preserving Federated Learning Framework for Secure Dementia Classification",
+      "conference": "4th International Conference on Electrical, Computer and Communication Engineering (ECCE)",
+      "date": "Feb 2025",
+      "preprint": "10.48550/arXiv.2503.03267"
+    },
+    {
+      "title": "Enhancing Network Security: A Hybrid Approach for Detection and Mitigation of Distributed Denial-of-Service Attacks Using Machine Learning",
+      "publisher": "Springer, Cham",
+      "date": "Aug 2024",
+      "doi": "10.1007/978-3-031-64064-3_7"
+    },
+    {
+      "title": "PhishVQC: Optimizing Phishing URL Detection with Correlation Based Feature Selection and Variational Quantum Classifier",
+      "conference": "3rd International Conference on Intelligent Systems Advanced Computing and Communication (ISACC)",
+      "date": "Feb 2025",
+      "preprint": "10.48550/arXiv.2503.01799"
+    }
+  ],
+  "projects": [
+    {
+      "name": "LinkedIn Auto Apply Bot",
+      "github": "/gazitanbhir/JobBot",
+      "description": "I developed an AI-powered automation tool that searches and applies for jobs on LinkedIn based on a given resume.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "Playwright",
+        "PyMuPDF",
+        "BeautifulSoup",
+        "Gemini (LLM)"
+      ]
+    },
+    {
+      "name": "Bengali Phising Text Detection System",
+      "github": "/gazitanbhir/BangSmish",
+      "description": "I designed a machine learning model to detect SMS phishing (smishing) using natural language processing (NLP) and transformers.",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Hugging Face Transformers",
+        "scikit-learn",
+        "Pandas"
+      ]
+    },
+    {
+      "name": "Plant Disease Detection",
+      "github": "/gazitanbhir/LeafDoctor",
+      "description": "I built a convolutional neural network (CNN)-based system for detecting plant diseases using image processing.",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "PyTorch",
+        "OpenCV"
+      ]
+    },
+    {
+      "name": "Fantasy Premier League (FPL) Leaderboard",
+      "github": "/gazitanbhir/fpl_project",
+      "description": "I developed a real-time Fantasy Premier League leaderboard that fetches live match data using the FPL API.",
+      "technologies": [
+        "Python",
+        "Django",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "API",
+        "Vercel"
+      ]
+    },
+    {
+      "name": "Local AI Chatbot",
+      "description": "I developed a local AI chatbot capable of answering questions across various topics using DeepSeek and FastAPI. I integrated multiple AI and NLP frameworks to enhance response accuracy and efficiency.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "DeepSeek",
+        "LangChain",
+        "Ollama",
+        "Transformers",
+        "SQLite"
+      ]
+    }
+  ],
+  "awards_achievements": [
+    "Outstanding Thesis/Project of the Year – Awarded by World University of Bangladesh (WUB), 2024.",
+    "ICPC Asia Regional Contestant – Participated in the Dhaka Regional Contest, 2023.",
+    "Champion, Mathematics and Computers – Creative Talent Exploration Competition, organized by the Government of Bangladesh."
+  ],
+  "certifications": [
+    "Mathematics for Machine Learning: Linear Algebra Imperial College London (Coursera)",
+    "HTML, CSS, and JavaScript for Web Developers Johns Hopkins University (Coursera)",
+    "C++ for C Programmers University of California (Coursera)",
+    "Professional Outsourcing Training in Digital Marketing – Specialized in Data Analysis and Lead Generation Learning & Earning Development Project, ICT Division, Bangladesh (2020)"
+  ],
+  "technologies": {
+    "languages": [
+      "Python",
+      "C++",
+      "HTML",
+      "CSS",
+      "SQL"
+    ],
+    "technologies": [
+      "Django",
+      "TensorFlow",
+      "Pytorch",
+      "Hugging Face",
+      "API",
+      "MySQL",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Git"
+    ]
+  }
+}

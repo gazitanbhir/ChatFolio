@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Gazi Tanbhir | ML Engineer</title>
+    <link rel="shortcut icon" href="/assets/images/ml-icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+
+<body class="min-h-screen bg-base-100 flex flex-col" hx-boost="true">
+    <!-- Enhanced Mobile Navigation -->
+    <nav class="navbar fixed top-0 z-50 bg-base-100/90 backdrop-blur-sm px-2 sm:px-4">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle touch-target">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a hx-get="/partials/home" hx-target="#content-container" class="code-font touch-target">Home</a>
+                    </li>
+                    <li><a hx-get="/partials/about" hx-target="#content-container"
+                            class="code-font touch-target">About</a></li>
+                    <li><a hx-get="/partials/portfolio" hx-target="#content-container"
+                            class="code-font touch-target">Projects</a></li>
+                    <li><a hx-get="/partials/research" hx-target="#content-container"
+                            class="code-font touch-target">Research</a></li>
+                    <li><a hx-get="/partials/contact" hx-target="#content-container"
+                            class="code-font touch-target">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 gap-1">
+                <li><a hx-get="/partials/home" hx-target="#content-container"
+                        class="code-font touch-target text-sm lg:text-base">Home</a></li>
+                <li><a hx-get="/partials/about" hx-target="#content-container"
+                        class="code-font touch-target text-sm lg:text-base">About</a></li>
+                <li><a hx-get="/partials/portfolio" hx-target="#content-container"
+                        class="code-font touch-target text-sm lg:text-base">Projects</a></li>
+                <li><a hx-get="/partials/research" hx-target="#content-container"
+                        class="code-font touch-target text-sm lg:text-base">Research</a></li>
+                <li><a hx-get="/partials/contact" hx-target="#content-container"
+                        class="code-font touch-target text-sm lg:text-base">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="https://github.com/gazitanbhir" target="_blank" rel="noopener noreferrer"
+                class="btn btn-ghost btn-circle touch-target">
+                <i class="fab fa-github text-xl"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Improved Main Content Container -->
+    <main id="content-container" class="pt-16 flex-grow" hx-get="/partials/home" hx-trigger="load">
+        <div class="content-wrapper h-full flex flex-col">
+            <div class="flex-grow flex items-center justify-center p-4">
+                <div class="htmx-indicator fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div class="loading loading-infinity loading-lg text-[var(--ml-blue)]"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Chat Icon (Bottom Right) -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button onclick="toggleChat()" class="btn btn-circle btn-primary shadow-2xl chat-icon-transform"
+            aria-label="Open Chat">
+            <i class="fas fa-comment-dots text-xl"></i>
+        </button>
+    </div>
+
+    <!-- 1: Chat Interface Redesign -->
+    <div class="fixed bottom-20 right-4 z-50 w-96 transition-all duration-300 origin-bottom-right opacity-0 scale-0 translate-y-20"
+        id="chat-container" style="user-select: none;">
+        <div
+            class="card bg-gradient-to-br from-gray-900 to-gray-800 shadow-2xl border border-gray-700 rounded-xl overflow-hidden">
+            <div class="card-body p-0">
+
+                <!-- Chat Header -->
+                <div class="flex items-center justify-between p-4 bg-gradient-to-r from-purple-700 to-indigo-700">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2 bg-white/10 rounded-full backdrop-blur-sm">
+                            <i class="fas fa-robot text-2xl text-purple-100"></i>
+                        </div>
+                        <h3 class="font-space-grotesk font-bold text-xl text-purple-50">GAZI 2.0</h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <form hx-post="/chat" hx-target="#chat-area" hx-swap="innerHTML">
+                            <button type="submit"
+                                class="btn btn-circle btn-xs btn-ghost hover:bg-white/10 text-purple-100 tooltip"
+                                data-tip="Reset Context" name="reset_context" value="true">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </form>
+                        <button class="btn btn-circle btn-xs btn-ghost hover:bg-white/10 text-purple-100"
+                            onclick="toggleChat()" aria-label="Minimize Chat">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Chat Content -->
+                <div
+                    class="p-4 h-[480px] flex flex-col bg-gradient-to-b from-gray-900 via-gray-900/50 to-gray-900/30">
+                    <div id="chat-area"
+                        class="flex-1 overflow-y-auto space-y-4 pr-2 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800/50">
+                        <!-- System Message -->
+                        <div class="chat-message system-message animate-fade-in">
+                            <div
+                                class="text-sm text-center text-gray-400 px-4 py-2 bg-indigo-900/50 rounded-full border border-indigo-800">
+                                How can I help you today?
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Typing Indicator -->
+                    <div id="typing-indicator" class="hidden chat-message system-message">
+                        <div
+                            class="flex items-center space-x-2 px-4 py-2 bg-gray-800 rounded-full border border-gray-700 w-fit">
+                            <div class="bounce-dot w-2 h-2 bg-gray-400 rounded-full"></div>
+                            <div class="bounce-dot w-2 h-2 bg-gray-400 rounded-full"></div>
+                            <div class="bounce-dot w-2 h-2 bg-gray-400 rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Input Area -->
+                    <form hx-post="/chat" hx-target="#chat-area" hx-swap="beforeend" class="mt-4 relative"
+                        id="chat-form">
+                        <div class="join w-full bg-gray-700 backdrop-blur-sm rounded-xl border border-gray-600">
+                            <textarea name="message" placeholder="Type your message..."
+                                class="textarea join-item flex-grow resize-none bg-transparent border-none focus:outline-none focus:ring-0 pl-4 pr-12 py-3 scrollbar-thin scrollbar-thumb-gray-600 text-white scrollbar-track-gray-700"
+                                rows="1"
+                                x-data="{resize() { this.style.height = '0'; this.style.height = this.scrollHeight + 'px' }}"
+                                x-on:input="resize(); checkCharCount()" id="message-input" required maxlength="500"
+                                aria-label="Enter your message"></textarea>
+                            <button type="submit"
+                                class="btn btn-circle btn-sm bg-purple-600 hover:bg-purple-700 border-none join-item absolute right-2 bottom-2
+                                                    transform transition-transform hover:scale-110"
+                                aria-label="Send message">
+                                <i class="fas fa-paper-plane text-sm text-white"></i>
+                            </button>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1 text-right pr-2">
+                            <span id="char-count" class="transition-colors">0/500</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this CSS for typing animation -->
+    <style>
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-0.25em);
+            }
+        }
+
+        .bounce-dot {
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .bounce-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .bounce-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        #typing-indicator {
+            margin-top: 0.5rem;
+            /* Adds a little space between chat area and the indicator */
+        }
+    </style>
+
+    <script>
+        // Chat visibility toggle
+        function toggleChat() {
+            const container = document.getElementById('chat-container');
+            container.classList.toggle('scale-0');
+            container.classList.toggle('opacity-0');
+            container.classList.toggle('translate-y-20');
+            container.classList.toggle('scale-100');
+            container.classList.toggle('opacity-100');
+            container.classList.toggle('translate-y-0');
+        }
+
+        // SMS via Enter Key
+        document.getElementById('message-input').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' && !event.shiftKey) { // Check for Shift+Enter for new line
+                event.preventDefault(); // Prevent newline
+                document.getElementById('chat-form').dispatchEvent(new Event('submit')); // Trigger form submission
+            }
+        });
+
+        // Character Count
+        function checkCharCount() {
+            const textarea = document.getElementById('message-input');
+            const charCount = document.getElementById('char-count');
+            const count = textarea.value.length;
+
+            charCount.textContent = `${count}/500`;
+
+            if (count > 450) {
+                charCount.classList.add('text-warning');
+            } else {
+                charCount.classList.remove('text-warning');
+            }
+        }
+
+        // Show/hide typing indicator
+        function showTypingIndicator() {
+            const indicator = document.getElementById('typing-indicator');
+            indicator.classList.remove('hidden');
+        }
+
+        function hideTypingIndicator() {
+            const indicator = document.getElementById('typing-indicator');
+            indicator.classList.add('hidden');
+        }
+
+        // HTMX event handlers
+        document.body.addEventListener('htmx:beforeSend', function (evt) {
+            if (evt.detail.elt.id === 'chat-form') {
+                showTypingIndicator();
+                // No need to scroll to bottom here, the indicator is already at the bottom
+            }
+        });
+
+        document.body.addEventListener('htmx:afterSwap', function (evt) {
+            if (evt.detail.target.id === 'chat-area') {
+                hideTypingIndicator();
+                // Scroll to bottom after message is swapped in
+                const chatArea = document.getElementById('chat-area');
+                chatArea.scrollTop = chatArea.scrollHeight;
+            }
+        });
+
+        document.body.addEventListener('htmx:responseError', function () {
+            hideTypingIndicator();
+        });
+
+        // Reset form after htmx request (clears textarea)
+        document.addEventListener('htmx:afterRequest', function (evt) {
+            const dropdown = document.querySelector('.dropdown');
+            if (dropdown) {
+                dropdown.removeAttribute('open');
+            }
+            const chatArea = document.getElementById('chat-area');
+            chatArea.scrollTop = chatArea.scrollHeight;
+
+            // Clear the textarea
+            const messageInput = document.getElementById('message-input');
+            messageInput.value = '';
+            checkCharCount(); // Reset character count
+        });
+
+        // Enhanced scroll handling
+        document.addEventListener('htmx:afterSwap', function(evt) {
+            // Only process main content updates
+            if(evt.detail.target.id === 'content-container') {
+                // Double ensure scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                
+                // Fallback for browsers that might cancel smooth scroll
+                setTimeout(() => {
+                    window.scrollTo(0, 0);
+                }, 1000);
+            }
+        });
+    </script>
+
+<!-- Enhanced Footer with Flexbox -->
+<footer class="footer footer-center p-6 sm:p-10 bg-base-200 mt-auto">
+    <div class="flex flex-wrap gap-4 justify-center">
+        <a hx-get="/partials/about" 
+           hx-target="#content-container"
+           hx-swap="innerHTML"
+           _="on click window.scrollTo({top: 0, behavior: 'smooth'})"
+           class="link code-font hover:text-[var(--ml-blue)]">
+            About
+        </a>
+        <a hx-get="/partials/portfolio" 
+           hx-target="#content-container"
+           hx-swap="innerHTML"
+           _="on click window.scrollTo({top: 0, behavior: 'smooth'})"
+           class="link code-font hover:text-[var(--ml-blue)]">
+            Projects
+        </a>
+        <a hx-get="/partials/contact" 
+           hx-target="#content-container"
+           hx-swap="innerHTML"
+           _="on click window.scrollTo({top: 0, behavior: 'smooth'})"
+           class="link code-font hover:text-[var(--ml-blue)]">
+            Contact
+        </a>
+    </div>
+    <div class="mt-4 flex gap-4">
+        <a href="https://linkedin.com/in/gazitanbhir" target="_blank" rel="noopener noreferrer"
+            class="btn btn-ghost btn-circle touch-target">
+            <i class="fab fa-linkedin text-xl"></i>
+        </a>
+        <a href="https://github.com/gazitanbhir" target="_blank" rel="noopener noreferrer"
+            class="btn btn-ghost btn-circle touch-target">
+            <i class="fab fa-github text-xl"></i>
+        </a>
+    </div>
+    <div class="mt-4">
+        <p class="code-font opacity-70 text-sm">
+            while not deployed(): optimize(model)
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!-- Scientific Profile Section - Quantum Computing Theme -->
+<div class="min-h-screen flex flex-col items-center justify-center px-4 mx-auto max-w-7xl relative isolate overflow-hidden">
+<!-- Quantum Entanglement Visualization -->
+<div class="relative isolate w-64 h-64 sm:w-72 sm:h-72 group">
+
+    <!-- Quantum Field Base -->
+    <div class="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500/10 to-purple-600/10 shadow-inner-xl"></div>
+
+    <!-- Wave Collapse Animation -->
+    <div class="absolute inset-0 rounded-full border-2 border-dashed border-cyan-400/30 animate-[wave_6s_linear_infinite]"></div>
+
+    <!-- Orbital Qubits -->
+    <div class="absolute inset-0 animate-[spin_12s_linear_infinite]">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16">
+            <div class="w-3 h-3 bg-cyan-400 rounded-full animate-pulse"></div>
+        </div>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-16">
+            <div class="w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
+        </div>
+    </div>
+
+    <!-- Quantum Core -->
+    <div class="absolute inset-2 rounded-full overflow-hidden backdrop-blur-xl">
+        <!-- Superposition Layer -->
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-600/20 animate-[quantum_pulse_4s_ease-in-out_infinite]"></div>
+        
+        <!-- Profile Qubit -->
+        <img 
+            src="/assets/images/me.png" 
+            alt="Gazi Tanbhir" 
+            class="relative w-full h-full rounded-full border-2 border-cyan-400/30 object-cover shadow-quantum transition-transform duration-300 group-hover:scale-95"
+            loading="lazy"
+        />
+    </div>
+</div>
+
+    <!-- Scientific Content -->
+    <div class="max-w-3xl text-center space-y-6 mt-8 px-4">
+        <!-- Researcher Information -->
+        <div class="space-y-4">
+            <h1 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                Gazi Tanbhir
+            </h1>
+            
+            <!-- Research Domains -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 font-mono text-sm sm:text-base">
+                <span class="px-3 py-1 bg-cyan-900/30 rounded-full text-cyan-300">Machine Learning Engineer</span>
+                <span class="text-gray-400 hidden sm:inline">⊗</span>
+                <span class="px-3 py-1 bg-purple-900/30 rounded-full text-purple-300">Quantum Researcher</span>
+            </div>
+        </div>
+<!-- Desktop Version (hidden on mobile) -->
+<div class="desktop-contact hidden md:block">
+    <div class="mockup-code bg-gray-900 border border-cyan-400/20 backdrop-blur-sm text-left mt-4">
+        <pre data-prefix="⟩" class="text-cyan-400"><code>contact_info = {</code></pre>
+        <pre data-prefix="|" class="text-emerald-400"><code>    location: "Dhaka, Bangladesh",</code></pre>
+        <pre data-prefix="|" class="text-purple-400"><code>    channels: [</code></pre>
+        <pre data-prefix="|" class="text-purple-400"><code>        {"Mail", "gazitanbhir@proton.me" },</code></pre>
+        <pre data-prefix="|" class="text-purple-400"><code>        {"LinkedIn", "linkedin.com/in/gazitanbhir" },</code></pre>
+        <pre data-prefix="|" class="text-purple-400"><code>        {"GitHub", "github.com/gazitanbhir" }</code></pre>
+        <pre data-prefix="|" class="text-purple-400"><code>    ]</code></pre>
+        <pre data-prefix="⟩" class="text-cyan-400"><code>}</code></pre>
+    </div>
+</div>
+
+<!-- Mobile Version (hidden on desktop) -->
+<div class="mobile-contact md:hidden mt-4">
+    <div class="bg-gray-900/90 border border-cyan-400/20 rounded-lg p-4 backdrop-blur-sm">
+        <div class="space-y-3">
+            <div class="flex items-center space-x-2 text-emerald-400">
+                <i class="fas fa-map-marker-alt w-5"></i>
+                <span>Dhaka, Bangladesh</span>
+            </div>
+            
+            <div class="border-t border-cyan-400/20 pt-3 space-y-2">
+                <a href="mailto:gazitanbhir@proton.me" class="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors">
+                    <i class="fas fa-envelope w-5"></i>
+                    <span>gazitanbhir@proton.me</span>
+                </a>
+                
+                <a href="https://linkedin.com/in/gazitanbhir" target="_blank" class="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors">
+                    <i class="fab fa-linkedin-in w-5"></i>
+                    <span>linkedin.com/in/gazitanbhir</span>
+                </a>
+                
+                <a href="https://github.com/gazitanbhir" target="_blank" class="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors">
+                    <i class="fab fa-github w-5"></i>
+                    <span>github.com/gazitanbhir</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Research Navigation -->
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+    <button class="btn btn-sm sm:btn-md gap-2 bg-cyan-900/30 hover:bg-cyan-900/40 border border-cyan-400/30 text-cyan-300"
+            hx-get="/partials/portfolio" hx-target="#content-container">
+        <i class="fas fa-microchip"></i>
+        ML Projects
+    </button>
+
+    <button class="btn btn-sm sm:btn-md gap-2 bg-purple-900/30 hover:bg-purple-900/40 border border-purple-400/30 text-purple-300"
+            hx-get="/partials/research" hx-target="#content-container">
+        <i class="fas fa-quantum-computer"></i>
+        Research Publications
+    </button>
+</div>
+    </div>
+</div>
+
+<!-- Enhanced About Section -->
+<article
+    class="space-y-12 p-6 bg-gray-900/50 backdrop-blur-lg rounded-2xl border border-cyan-400/20 mt-12 w-full max-w-md sm:max-w-xl lg:max-w-4xl mx-auto animate-slide-in-bottom"
+>
+    <!-- Services Section with Grid -->
+    <section class="space-y-8">
+        <h3 class="text-2xl sm:text-3xl font-bold text-cyan-400 font-mono">
+            <span class="text-purple-400 mr-2">≫</span>Core Competencies
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <!-- NLP & LLM Card -->
+            <div
+                class="card bg-gray-800/60 hover:bg-gray-800/80 border border-purple-400/20 transition-all duration-300 hover:-translate-y-1 group"
+            >
+                <div class="card-body p-4 sm:p-6">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-purple-900/30 rounded-full">
+                            <i class="fas fa-robot text-2xl text-purple-400"></i>
+                        </div>
+                        <h4 class="card-title text-lg sm:text-xl text-purple-300">NLP & LLM Applications</h4>
+                    </div>
+                    <p class="mt-2 text-gray-300 text-sm sm:text-base">
+                        Built phishing detection systems using BERT & Transformers, and LLM-driven automation tools for LinkedIn job applications.
+                    </p>
+                    <div class="mt-3 flex gap-2 flex-wrap">
+                        <div class="badge badge-outline badge-cyan">Transformers</div>
+                        <div class="badge badge-outline badge-purple">LangChain</div>
+                        <div class="badge badge-outline badge-purple">TensorFlow</div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Machine Learning Card -->
+            <div
+                class="card bg-gray-800/60 hover:bg-gray-800/80 border border-cyan-400/20 transition-all duration-300 hover:-translate-y-1 group"
+            >
+                <div class="card-body p-4 sm:p-6">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-cyan-900/30 rounded-full">
+                            <i class="fas fa-microscope text-2xl text-cyan-400"></i>
+                        </div>
+                        <h4 class="card-title text-lg sm:text-xl text-cyan-300">Machine Learning</h4>
+                    </div>
+                    <p class="mt-2 text-gray-300 text-sm sm:text-base">
+                        Designed CNN models for plant disease detection and quantum-inspired federated learning for healthcare analytics.
+                    </p>
+                    <div class="mt-3 flex gap-2 flex-wrap">
+                        <div class="badge badge-outline badge-cyan">PyTorch</div>
+                        <div class="badge badge-outline badge-purple">TensorFlow</div>
+                        <div class="badge badge-outline badge-cyan">scikit-learn</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Certifications Carousel -->
+<section class="space-y-8">
+    <h3 class="text-2xl sm:text-3xl font-bold text-purple-400 font-mono">
+        <span class="text-cyan-400 mr-2">≫</span>Credentials
+    </h3>
+    <div
+        class="flex overflow-x-auto pb-4 gap-4 scrollbar-thin scrollbar-thumb-cyan-400/30 scrollbar-track-gray-900/20 snap-x snap-mandatory"
+    >
+        <!-- ICPC Certification -->
+        <div
+            class="card w-64 flex-shrink-0 bg-gray-800/60 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 transform hover:scale-[1.02] scroll-snap-align: start"
+        >
+            <figure class="relative h-32">
+                <img
+                    src="/assets/images/cr0.jpeg"
+                    alt="ICPC"
+                    class="w-full h-full object-cover opacity-60"
+                />
+            </figure>
+            <div class="card-body p-4">
+                <h4 class="card-title text-cyan-300 text-lg">ICPC Asia Dhaka Regional</h4>
+                <p class="text-gray-300 text-sm">Honorable Mention</p>
+                <div class="mt-2 badge badge-cyan">Problem Solving</div>
+            </div>
+        </div>
+                <!-- Conf Certifications -->
+
+        <div
+            class="card w-64 flex-shrink-0 bg-gray-800/60 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 transform hover:scale-[1.02] scroll-snap-align: start"
+        >
+            <figure class="relative h-32">
+                <img
+                    src="/assets/images/ecce.jpg"
+                    alt="International Conference on Electrical, Computer and Communication Engineering"
+                    class="w-full h-full object-cover opacity-60"
+                />
+            </figure>
+            <div class="card-body p-4">
+                <h4 class="card-title text-cyan-300 text-lg">ECCCE 2025</h4>
+                <p class="text-gray-300 text-sm">Paper Contribution</p>
+                <div class="mt-2 badge badge-cyan">Quantum Security</div>
+            </div>
+        </div>
+        <!-- Coursera Certifications -->
+        <div
+            class="card w-64 flex-shrink-0 bg-gray-800/60 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 transform hover:scale-[1.02] scroll-snap-align: start"
+        >
+            <figure class="relative h-32">
+                <img
+                    src="/assets/images/cr3.jpg"
+                    alt="HTML, CSS, and JavaScript for Web Developers"
+                    class="w-full h-full object-cover opacity-60"
+                />
+            </figure>
+            <div class="card-body p-4">
+                <h4 class="card-title text-cyan-300 text-lg">HTML, CSS, and JS</h4>
+                <p class="text-gray-300 text-sm">Web Development</p>
+                <div class="mt-2 badge badge-cyan">Full Stack</div>
+            </div>
+        </div>
+
+        <div
+            class="card w-64 flex-shrink-0 bg-gray-800/60 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 transform hover:scale-[1.02] scroll-snap-align: start"
+        >
+            <figure class="relative h-32">
+                <img
+                    src="/assets/images/cr1.jpg"
+                    alt="C++ For C Programmers, Part A"
+                    class="w-full h-full object-cover opacity-60"
+                />
+            </figure>
+            <div class="card-body p-4">
+                <h4 class="card-title text-cyan-300 text-lg">C++ For C Programmers</h4>
+                <p class="text-gray-300 text-sm">Part A</p>
+                <div class="mt-2 badge badge-cyan">Programming</div>
+            </div>
+        </div>
+
+        <div
+            class="card w-64 flex-shrink-0 bg-gray-800/60 border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 transform hover:scale-[1.02] scroll-snap-align: start"
+        >
+            <figure class="relative h-32">
+                <img
+                    src="/assets/images/cr2.jpg"
+                    alt="Mathematics for Machine Learning: Linear Algebra"
+                    class="w-full h-full object-cover opacity-60"
+                />
+            </figure>
+            <div class="card-body p-4">
+                <h4 class="card-title text-cyan-300 text-lg">Mathematics for ML</h4>
+                <p class="text-gray-300 text-sm">Linear Algebra</p>
+                <div class="mt-2 badge badge-cyan">Machine Learning</div>
+            </div>
+        </div>
+    </div>
+</section>
+</article>

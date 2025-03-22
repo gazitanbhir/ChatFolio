@@ -1,0 +1,221 @@
+<!-- Portfolio Section -->
+<article class="space-y-8 p-6 lg:p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl">
+    <!-- Animated Header -->
+    <header class="text-center relative group">
+        <div class="mockup-code bg-gray-800 border-2 border-cyan-400/20 glow-cyan mx-auto max-w-md">
+            <pre data-prefix="$" class="text-cyan-400"><code class="font-mono">load_projects --all</code></pre>
+        </div>
+        <div class="absolute inset-x-0 -bottom-4 h-1 bg-gradient-to-r from-cyan-500/0 via-cyan-400/50 to-cyan-500/0 opacity-50 group-hover:opacity-100 transition-opacity"></div>
+    </header>
+
+    <!-- Project Grid -->
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+        <!-- JobBot -->
+        <li class="card bg-gray-800 border-2 border-gray-700 hover:border-cyan-400/30 transition-all 
+                 group/card shadow-xl hover:shadow-2xl" data-category="web development">
+            <figure class="relative h-48 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent z-10"></div>
+                <img src="/assets/images/jobbot.png" alt="JobBot Preview" 
+                     class="w-full h-full object-cover transform transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                    <span class="badge badge-lg bg-purple-600/30 border-purple-400/20 text-purple-300">
+                        <i class="fas fa-robot mr-2"></i>Automation
+                    </span>
+                </div>
+                <a href="https://github.com/gazitanbhir/JobBot" target="_blank" class="absolute right-4 top-4 btn btn-circle btn-sm bg-cyan-400/20 border-cyan-400/30 
+                            hover:bg-cyan-400/30 text-cyan-300 z-20">
+                    <i class="fab fa-github"></i>
+                </a>
+            </figure>
+            <div class="card-body p-4 space-y-3">
+                <h3 class="card-title text-cyan-200 text-xl">JobBot</h3>
+                <p class="text-gray-400 text-sm">AI-powered LinkedIn job application automation</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="kbd kbd-sm bg-gray-700 text-cyan-300 border-gray-600">Python</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-purple-300 border-gray-600">FastAPI</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-amber-300 border-gray-600">Gemini</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-green-300 border-gray-600">Playwright</span>
+                </div>
+            </div>
+        </li>
+
+        <!-- Bengali Phishing Detection -->
+        <li class="card bg-gray-800 border-2 border-gray-700 hover:border-cyan-400/30 transition-all 
+                 group/card shadow-xl hover:shadow-2xl" data-category="machine learning">
+            <figure class="relative h-48 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent z-10"></div>
+                <img src="/assets/images/smish.png" alt="Phishing Detection" 
+                     class="w-full h-full object-cover transform transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                    <span class="badge badge-lg bg-cyan-600/30 border-cyan-400/20 text-cyan-300">
+                        <i class="fas fa-shield-alt mr-2"></i>NLP
+                    </span>
+                </div>
+                <a href="https://github.com/gazitanbhir/BangSmish" target="_blank" class="absolute right-4 top-4 btn btn-circle btn-sm bg-cyan-400/20 border-cyan-400/30 
+                hover:bg-cyan-400/30 text-cyan-300 z-20">
+        <i class="fab fa-github"></i>
+    </a>
+            </figure>
+            <div class="card-body p-4 space-y-3">
+                <h3 class="card-title text-cyan-200 text-xl">Bengali Phishing Detection</h3>
+                <p class="text-gray-400 text-sm">SMS phishing detection using transformers</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="kbd kbd-sm bg-gray-700 text-emerald-300 border-gray-600">TensorFlow</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-rose-300 border-gray-600">Transformers</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-amber-300 border-gray-600">BERT</span>
+                </div>
+            </div>
+        </li>
+        
+
+        <!-- Plant Disease Detection -->
+        <li class="card bg-gray-800 border-2 border-gray-700 hover:border-cyan-400/30 transition-all 
+                 group/card shadow-xl hover:shadow-2xl" data-category="machine learning">
+            <figure class="relative h-48 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent z-10"></div>
+                <img src="/assets/images/plant.png" alt="Plant Disease Detection" 
+                     class="w-full h-full object-cover transform transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                    <span class="badge badge-lg bg-green-600/30 border-green-400/20 text-green-300">
+                        <i class="fas fa-leaf mr-2"></i>Computer Vision
+                    </span>
+                </div>
+                <a href="https://github.com/gazitanbhir/LeafDoctor" target="_blank" class="absolute right-4 top-4 btn btn-circle btn-sm bg-cyan-400/20 border-cyan-400/30 
+                            hover:bg-cyan-400/30 text-cyan-300 z-20">
+                    <i class="fab fa-github"></i>
+                </a>
+            </figure>
+            <div class="card-body p-4 space-y-3">
+                <h3 class="card-title text-cyan-200 text-xl">Plant Disease Detection</h3>
+                <p class="text-gray-400 text-sm">CNN-based plant health analysis system</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="kbd kbd-sm bg-gray-700 text-lime-300 border-gray-600">PyTorch</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-orange-300 border-gray-600">OpenCV</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-purple-300 border-gray-600">Keras</span>
+                </div>
+            </div>
+        </li>
+
+        <!-- FPL Leaderboard -->
+        <li class="card bg-gray-800 border-2 border-gray-700 hover:border-cyan-400/30 transition-all 
+                 group/card shadow-xl hover:shadow-2xl" data-category="web development">
+            <figure class="relative h-48 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent z-10"></div>
+                <img src="/assets/images/fpl.png" alt="FPL Leaderboard" 
+                     class="w-full h-full object-cover transform transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                    <span class="badge badge-lg bg-blue-600/30 border-blue-400/20 text-blue-300">
+                        <i class="fas fa-trophy mr-2"></i>Sports
+                    </span>
+                </div>
+                <a href="https://github.com/gazitanbhir/fpl_project" target="_blank" class="absolute right-4 top-4 btn btn-circle btn-sm bg-cyan-400/20 border-cyan-400/30 
+                            hover:bg-cyan-400/30 text-cyan-300 z-20">
+                    <i class="fab fa-github"></i>
+                </a>
+            </figure>
+            <div class="card-body p-4 space-y-3">
+                <h3 class="card-title text-cyan-200 text-xl">FPL Leaderboard</h3>
+                <p class="text-gray-400 text-sm">Real-time Fantasy Premier League tracker</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="kbd kbd-sm bg-gray-700 text-sky-300 border-gray-600">Django</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-amber-300 border-gray-600">PostgreSQL</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-purple-300 border-gray-600">Tailwind</span>
+                </div>
+            </div>
+        </li>
+
+        <!-- NeuroBot -->
+        <li class="card bg-gray-800 border-2 border-gray-700 hover:border-cyan-400/30 transition-all 
+                 group/card shadow-xl hover:shadow-2xl" data-category="web development">
+            <figure class="relative h-48 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent z-10"></div>
+                <img src="/assets/images/neurobot.png" alt="NeuroBot Preview" 
+                     class="w-full h-full object-cover transform transition-transform duration-500 group-hover/card:scale-110">
+                <div class="absolute bottom-4 left-4 z-20 flex gap-2">
+                    <span class="badge badge-lg bg-purple-600/30 border-purple-400/20 text-purple-300">
+                        <i class="fas fa-comment-alt mr-2"></i>Chatbot
+                    </span>
+                </div>
+            </figure>
+            <div class="card-body p-4 space-y-3">
+                <h3 class="card-title text-cyan-200 text-xl">NeuroBot</h3>
+                <p class="text-gray-400 text-sm">Local AI chatbot with multi-model support</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="kbd kbd-sm bg-gray-700 text-cyan-300 border-gray-600">FastAPI</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-emerald-300 border-gray-600">LangChain</span>
+                    <span class="kbd kbd-sm bg-gray-700 text-amber-300 border-gray-600">Ollama</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</article>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('[data-filter]');
+        const mobileFilter = document.getElementById('mobile-filter');
+        const projects = document.querySelectorAll('[data-category]');
+    
+        const filterProjects = (category) => {
+            projects.forEach(project => {
+                const projectCategory = project.getAttribute('data-category');
+                if (category === 'all' || projectCategory === category) {
+                    project.classList.remove('hidden');
+                } else {
+                    project.classList.add('hidden');
+                }
+            });
+    
+            filterButtons.forEach(btn => {
+                btn.classList.toggle('active-filter', btn.dataset.filter === category);
+            });
+        };
+    
+        // Initialize with 'all' projects visible
+        filterProjects('all');
+    
+        // Desktop filter buttons
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.dataset.filter;
+                filterProjects(category);
+            });
+        });
+    
+        // Mobile filter select
+        mobileFilter.addEventListener('change', (e) => {
+            filterProjects(e.target.value);
+        });
+    });
+    </script>
+
+<style>
+.glow-cyan {
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.15);
+}
+
+.kbd {
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.kbd:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.active-filter {
+    border: 1px solid rgba(34, 211, 238, 0.4) !important;
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.2);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .card {
+        width: 100%; /* Take up full width */
+        max-width: none; /* Override any max-width */
+    }
+}
+</style>
